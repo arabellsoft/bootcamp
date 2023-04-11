@@ -7,17 +7,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          I am a Canucks app
+          Vancouver Canucks
         </p>
-        <a
-          className="App-link"
-          href="https://www.nhl.com/canucks"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Canucks site
-        </a>
       </header>
+      <p className="title">
+        Scores Preview 
+      </p>
     </div>
   );
 }
