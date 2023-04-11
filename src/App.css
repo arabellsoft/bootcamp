@@ -65,18 +65,18 @@
   justify-content: center;
 }
 
-.one {
+.scoresTopRow {
   flex-grow: 1;
   border: 1px solid red;  
 }
 
-.two {
+.scoresBottomRow {
   flex-grow: 3;
   border: 1px solid blue;   
   flex-direction: column;
 }
 
-.twoItem { 
+.scoreItem { 
   border: 1px solid orange;     
 }
 
@@ -88,6 +88,6 @@
   text-align: center;
 }
 
-.flexItemGray {
+.gray {
   color: grey;
 }

@@ -15,11 +15,11 @@ function App() {
       </p>
 
       <div className="scores">
-        <div className="one flexItemGray">Tuesday, Apr 11</div>
-        <div className="two">
-          <div className="twoItem">Logo</div>
-          <div className="twoItem">Canucks</div>
-          <div className="twoItem flexItemGray">36-37-7</div>
+        <div className="scoresTopRow gray">Tuesday, Apr 11</div>
+        <div className="scoresBottomRow">
+          <div className="scoreItem">Logo</div>
+          <div className="scoreItem">Canucks</div>
+          <div className="scoreItem gray">36-37-7</div>
         </div>
       </div>
 
