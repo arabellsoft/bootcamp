@@ -21,3 +21,53 @@
 .App-link {
   color: #61dafb;
 }
+
+.a {
+  background-color: green;
+}
+
+.b {
+  background-color: red;
+}
+
+.c {
+  background-color: orange;
+}
+
+.d {
+  background-color: violet;
+}
+
+.scores {
+  width: 300px;
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flexContainer {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: auto;
+  border: 1px solid blue;
+}
+
+.flexItem {
+  background-color: tomato;
+  padding: 5px;
+  margin: 10px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
