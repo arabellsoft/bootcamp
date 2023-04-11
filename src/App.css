@@ -68,6 +68,7 @@
 .scoresTopRow {
   flex-grow: 1;
   border: 1px solid red;  
+  font-size: 75%;
 }
 
 .scoresBottomRow {
