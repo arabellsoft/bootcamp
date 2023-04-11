@@ -37,7 +37,7 @@
 
 .scores-row {
   width: auto;
-  border: 1px solid blue; 
+  border: 1px solid blue;
 }
 
 .scores-top {
@@ -59,26 +59,24 @@
 
 .scores {
   display: flex;
-  flex-direction: column;
-  height: 100px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  background-color: orange;
 }
 
 .scoresTopRow {
   flex-grow: 1;
-  border: 1px solid red;  
   font-size: 75%;
 }
 
 .scoresBottomRow {
   flex-grow: 3;
-  border: 1px solid blue;   
-  flex-direction: column;
+  border: 1px solid greenyellow;
 }
 
-.scoreItem { 
-  border: 1px solid orange;     
+.scoreItem {
+  border: 1px solid orange;
 }
 
 .flexItem {
@@ -91,4 +89,27 @@
 
 .gray {
   color: grey;
+}
+
+.scoresBottomRowColumn {
+  border: 1px solid blue;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid grey;
+}
+
+.box {
+  margin: 1.5em;
+  padding: 1em;
+}
+
+.empty {
+  padding: 0.8em;
 }

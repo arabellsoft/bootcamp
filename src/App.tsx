@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Icon } from 'semantic-ui-react';
 
 function App() {
   return (
@@ -14,15 +15,29 @@ function App() {
         Scores Preview
       </p>
 
-      <div className="scores">
-        <div className="scoresTopRow gray">Tuesday, Apr 11</div>
-        <div className="scoresBottomRow">
-          <div className="scoreItem">Logo</div>
-          <div className="scoreItem">Canucks</div>
-          <div className="scoreItem gray">36-37-7</div>
+      <div className="row">
+        <div className="box">
+          <div><div className="scoresTopRow gray">Tuesday, Apr 11</div></div>
+          <div><Icon loading name='hockey puck' size='huge' /></div>
+          <div>Canucks</div>
+          <div className="gray">36-37-7</div>
+        </div>
+        <div className="box">          
+          <div>@</div>          
+        </div>
+        <div className="box">
+          <div><div className="empty"></div></div>
+          <div><Icon name='rocket' size='huge' /></div>
+          <div>Kelowna Rockets</div>
+          <div className="gray">23-45-12</div>
+        </div>
+        <div className="box">
+          <div className="empty"></div>
+          <div className="empty"></div>
+          <div className="scoresTopRow">7:00 PM PT</div>
+          <div className="empty"></div>
         </div>
       </div>
-
     </div>
   );
 }
