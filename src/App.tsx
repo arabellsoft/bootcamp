@@ -11,17 +11,18 @@ function App() {
         </p>
       </header>
       <p className="title">
-        Scores Preview 
+        Scores Preview
       </p>
 
-      <div className="flexContainer">
-        <div className="row">
-          <div className="flexItem">Friday, Mar 31</div>
-          <div className="flexItem">Logo</div>
-          <div className="flexItem">Flames</div>
-          <div className="flexItem flexItemGray">32-26-15</div>
+      <div className="scores">
+        <div className="one flexItemGray">Tuesday, Apr 11</div>
+        <div className="two">
+          <div className="twoItem">Logo</div>
+          <div className="twoItem">Canucks</div>
+          <div className="twoItem flexItemGray">36-37-7</div>
         </div>
       </div>
+
     </div>
   );
 }

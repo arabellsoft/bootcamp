@@ -5,17 +5,14 @@
   flex-direction: column;
   align-items: top;
   justify-content: top;
-  background-color: black;
 }
 
 .App-header {
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .title {
   font-size: calc(5px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -38,16 +35,20 @@
   background-color: violet;
 }
 
-.scores {
-  width: 300px;
-    
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    
+.scores-row {
+  width: auto;
+  border: 1px solid blue; 
 }
 
-.flexContainer {
+.scores-top {
+  flex-grow: 1;
+}
+
+.scores-bottom {
+  flex-grow: 3;
+}
+
+.scoreColumn {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -56,16 +57,33 @@
   justify-content: center;
 }
 
-.row {
-  width: auto;
-  border: 1px solid blue;
+.scores {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.one {
+  flex-grow: 1;
+  border: 1px solid red;  
+}
+
+.two {
+  flex-grow: 3;
+  border: 1px solid blue;   
+  flex-direction: column;
+}
+
+.twoItem { 
+  border: 1px solid orange;     
 }
 
 .flexItem {
   padding: 5px;
   margin: 10px;
   line-height: 40px;
-  color: white;
   font-size: 1em;
   text-align: center;
 }
