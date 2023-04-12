@@ -113,3 +113,20 @@
 .empty {
   padding: 0.8em;
 }
+
+.featured {
+  margin-top: 2em;
+}
+
+.featured > .title {
+  padding: 0.2em;
+  border-bottom: 0.3rem solid grey;
+}
+
+.featured-picture {
+  width: 600px;
+}
+
+.featured-container {
+  margin-top: 1em;
+}

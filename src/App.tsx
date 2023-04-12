@@ -38,6 +38,17 @@ function App() {
           <div className="empty"></div>
         </div>
       </div>
+
+      <div className="featured">
+        <div className="title">
+          <div>FEATURED</div>
+        </div>
+        <div className="featured-container">
+          <div>
+            <img className="featured-picture" src="https://www.sportsnet.ca/wp-content/uploads/2021/05/Connor-McDavid-Auston-Matthews-1040x572.jpg" alt="Italian Trulli" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
