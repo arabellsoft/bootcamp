@@ -39,27 +39,40 @@ function App() {
         </div>
       </div>
 
-      {/* <div className="featured">
-        <div className="title">
-          <div>FEATURED</div>
-        </div>
-        <div className="featured-container">
-          <div className="tint">
-            <img className="featured-picture" src="https://www.sportsnet.ca/wp-content/uploads/2021/05/Connor-McDavid-Auston-Matthews-1040x572.jpg" alt="Italian Trulli" />
-          </div>
-          <div className="featured-text-container">
-            <span className="featured-text featured-text-header">FINAL | Canucks 3 Ducks 2</span>
-            <span className="featured-text featured-text-subtitle">Canucks win in on the second night again!</span>
-          </div>
-        </div>
-      </div> */}
+      
 
       <div className="featured-stories-container">
         <div className="column">
-          col 1
+          <div className="featured">
+            <div className="title">
+              <div>FEATURED</div>
+            </div>
+            <div className="featured-container">
+              <div className="tint">
+                <img className="featured-picture" src="https://www.sportsnet.ca/wp-content/uploads/2021/05/Connor-McDavid-Auston-Matthews-1040x572.jpg" alt="Italian Trulli" />
+              </div>
+              <div className="featured-text-container">
+                <span className="featured-text featured-text-header">FINAL | Canucks 3 Ducks 2</span>
+                <span className="featured-text featured-text-subtitle">Canucks win in on the second night again!</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="column">
-          col 2
+          <div className="featured">
+            <div className="title">
+              <div>STORIES</div>
+            </div>
+            <div className="featured-container">
+              <div className="tint">
+                <img className="featured-picture" src="https://www.sportsnet.ca/wp-content/uploads/2021/05/Connor-McDavid-Auston-Matthews-1040x572.jpg" alt="Italian Trulli" />
+              </div>
+              <div className="featured-text-container">
+                <span className="featured-text featured-text-header">FINAL | Canucks 3 Ducks 2</span>
+                <span className="featured-text featured-text-subtitle">Canucks win in on the second night again!</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
