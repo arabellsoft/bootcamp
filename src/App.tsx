@@ -22,8 +22,8 @@ function App() {
           <div>Canucks</div>
           <div className="gray">36-37-7</div>
         </div>
-        <div className="box">          
-          <div>@</div>          
+        <div className="box">
+          <div>@</div>
         </div>
         <div className="box">
           <div><div className="empty"></div></div>
@@ -39,7 +39,7 @@ function App() {
         </div>
       </div>
 
-      
+
 
       <div className="featured-stories-container">
         <div className="column">
@@ -69,14 +69,34 @@ function App() {
                   <li>Coffee</li>
                   <li>Tea</li>
                   <li>Milk</li>
-                </ol> 
+                </ol>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+
+
+      <div className="main-container">
+        <div className="left-container">Left container</div>
+        <div className="right-container">
+          <div className="half-containers">
+            Top right<br />
+            Top right<br />
+            Top right<br />
+            Top right<br />
+            Top right<br />
+            Top right<br />
+            Top right<br />
+            Top right<br />
+          </div>
+          <div className="half-containers">Bottom right</div>
+        </div>
+      </div>
+
     </div>
-  );
+  )                
 }
 
 export default App;
