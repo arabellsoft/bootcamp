@@ -64,12 +64,12 @@ function App() {
               <div>STORIES</div>
             </div>
             <div className="featured-container">
-              <div className="tint">
-                <img className="featured-picture" src="https://www.sportsnet.ca/wp-content/uploads/2021/05/Connor-McDavid-Auston-Matthews-1040x572.jpg" alt="Italian Trulli" />
-              </div>
-              <div className="featured-text-container">
-                <span className="featured-text featured-text-header">FINAL | Canucks 3 Ducks 2</span>
-                <span className="featured-text featured-text-subtitle">Canucks win in on the second night again!</span>
+              <div className="stories">
+                <ol>
+                  <li>Coffee</li>
+                  <li>Tea</li>
+                  <li>Milk</li>
+                </ol> 
               </div>
             </div>
           </div>
