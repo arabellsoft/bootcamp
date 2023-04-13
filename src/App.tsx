@@ -39,7 +39,7 @@ function App() {
         </div>
       </div>
 
-      <div className="featured">
+      {/* <div className="featured">
         <div className="title">
           <div>FEATURED</div>
         </div>
@@ -51,6 +51,15 @@ function App() {
             <span className="featured-text featured-text-header">FINAL | Canucks 3 Ducks 2</span>
             <span className="featured-text featured-text-subtitle">Canucks win in on the second night again!</span>
           </div>
+        </div>
+      </div> */}
+
+      <div className="featured-stories-container">
+        <div className="column">
+          col 1
+        </div>
+        <div className="column">
+          col 2
         </div>
       </div>
     </div>

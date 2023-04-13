@@ -166,3 +166,15 @@
   right: 31.8%;
   background: rgba(34, 31, 33, 0.8);
 }
+
+.featured-stories-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-stories-container > .column {
+  margin: 1em;
+  background-color: aqua;
+}
