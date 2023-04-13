@@ -44,7 +44,7 @@ function App() {
           <div>FEATURED</div>
         </div>
         <div className="featured-container">
-          <div>
+          <div className="tint">
             <img className="featured-picture" src="https://www.sportsnet.ca/wp-content/uploads/2021/05/Connor-McDavid-Auston-Matthews-1040x572.jpg" alt="Italian Trulli" />
           </div>
           <div className="featured-text-container">

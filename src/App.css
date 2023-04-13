@@ -124,7 +124,7 @@
 }
 
 .featured-picture {
-  width: 600px;
+  width: 700px;
 }
 
 .featured-container {
@@ -150,4 +150,19 @@
   top: 90%;
   /* vertical alignment */
   transform: translate(-50%, -50%);
+}
+
+.tint {
+  position: relative;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 80%;
+  bottom: 2%;
+  left: 31.8%;
+  right: 31.8%;
+  background: rgba(34, 31, 33, 0.8);
 }
