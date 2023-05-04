@@ -1,6 +1,6 @@
 # Web Developer Bootcamp
 
-Welcome to the web developer bootcamp where you do the practical work to get ready to actually become a web developer and supercharge your earning potential in this highly lucrative field.
+Welcome to the web developer bootcamp where you do the practical work to get ready to actually become a web developer and supercharge your earning potential.
 
 This bootcamp was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
