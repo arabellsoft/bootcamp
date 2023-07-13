@@ -12,26 +12,10 @@ Let's jump right in.
 
 For any project, you will need to get prepared and setuup your development environment:
 
-### `Install node`
-
-Use one of the downloads on this link [https://nodejs.org/en/download](https://nodejs.org/en/download) to download node in the browser.
-
-#### `Verify node installation`
-> node -v
-
-You should see the version number. Mine shows `v18.14.2`
-
-### `Install yarn`
-
-> npm install --global yarn
-
-#### `Verify yarn installation`
-> yarn -v
-
 ### `Download and install Visual Studio Code`
  via [https://code.visualstudio.com/download](https://code.visualstudio.com/download) 
 
-### `GitHub account`
+## `GitHub`
 
 ### `Have a github account? Please sign in. If you don't, create an account.`
 1. [https://github.com/](https://github.com/)
@@ -40,4 +24,26 @@ You should see the version number. Mine shows `v18.14.2`
 ### `Download and install GitHub Desktop`
  1. via [https://desktop.github.com/](https://desktop.github.com/) 
  2. Login using the previously created github account details.
+
+## `Node JS`
+
+Use one of the downloads on this link [https://nodejs.org/en/download](https://nodejs.org/en/download) to download node in the browser.
+
+#### `Verify node installation`
+> node -v
+
+You should see the version number. For example, you may see `v18.14.2`
+
+## `Yarn`
+
+> npm install --global yarn
+
+#### `Verify yarn installation`
+> yarn -v
+
+### `Install project dependencies`
+> yarn install
+
+### `Run project`
+> yarn start
 

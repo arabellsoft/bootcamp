@@ -52,15 +52,11 @@ function Fibonacci() {
 
     <style>
       {`
-      #nested_1 {
-        background-color: rgba(96, 112, 175, .2);
-        border: 3px dashed #495285;
-      }
 
       #nested_1 p {
         background-color: orange;
         border-radius: 15px;
-        width: 120%
+        width: 140%
       }
 
       #nested_1 span {
@@ -72,7 +68,7 @@ function Fibonacci() {
 
     <Grid>
       <Grid.Column>
-        <Grid columns={12} id='nested_1'>
+        <Grid columns={13} id='nested_1'>
           {getAllFibonaccis(count).map(function (i) {
             return <Grid.Column>
               <p>
@@ -123,7 +119,9 @@ function getFibonaccisV3(): Number[] {
 
 /*
 v4: Function to return calculated fibonacci sequence
-Improved with a maximum count of fibonacci's
+Improved with 
+1. Calculate first 2 numbers in the sequence
+2. Handle when n > 1
 */
 function getFibonaccisV4(): number[] {
   const fibonacciSequence: number[] = [];
@@ -145,7 +143,9 @@ function getFibonaccisV4(): number[] {
 }
 
 /*
-v5: Function to return calculated fibonacci sequence. Optimize the first two conditions.
+v5: Function to return calculated fibonacci sequence. 
+1. Optimize the first two conditions.
+2. Code in shorter number of lines of code
 */
 function getFibonaccisV5(): number[] {
   const fibonacciSequence: number[] = [];
@@ -179,6 +179,7 @@ function getAllFibonaccis(count: number): number[] {
 
 /*
 v6: Function to return calculated fibonacci sequence using recurssion. 
+ - way less code using recurssion
 */
 function getFibonaccisV6(count: number): number {
   if (count <= 1) {
