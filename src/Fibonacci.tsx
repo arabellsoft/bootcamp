@@ -35,7 +35,7 @@ function Fibonacci() {
 
     <Header as='h2' icon inverted textAlign='center'>
       <Icon name='grid layout' />
-      Fibonacci Sequence Demonstration     
+      Fibonacci Sequence Demonstration
     </Header>
     <Divider />
 
@@ -45,7 +45,7 @@ function Fibonacci() {
       </Header.Subheader>
     </Header>
 
-    <Input type="number" action='Enter' placeholder='Count' value={count} onChange={(e) => handleCountChange(e)}/>
+    <Input type="number" action='Enter' placeholder='Count' value={count} onChange={(e) => handleCountChange(e)} />
 
     <Divider hidden />
     <Divider hidden />
@@ -69,7 +69,7 @@ function Fibonacci() {
     <Grid>
       <Grid.Column>
         <Grid columns={13} id='nested_1'>
-          {getAllFibonaccis(count).map(function (i) {
+          {getFibonaccisV5().map(function (i) {
             return <Grid.Column>
               <p>
                 <span>
@@ -83,110 +83,107 @@ function Fibonacci() {
     </Grid>
   </Container>
 
-function handleCountChange(event: React.ChangeEvent<HTMLInputElement>): void {
-  const value = event.target.value;
-  setCount(Number(value));
-}
-}
+  function handleCountChange(event: React.ChangeEvent<HTMLInputElement>): void {
+    const value = event.target.value;
+    setCount(Number(value));
+  }
 
-/*
-v1: Initial function to return just an array of 1 element
-*/
-function getFibonaccisV1(): Number[] {
-  return [1]
-}
+  /*
+    v1: Initial function to return just an array of 1 element
+  */
+  function getFibonaccisV1(): Number[] {
+    return [1]
+  }
 
-/*
-v2: Basic function to return hard-coded fibonacci sequence
-*/
-function getFibonaccisV2(): Number[] {
-  return [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
-}
+  /*
+    v2: Basic function to return hard-coded fibonacci sequence
+  */
+  function getFibonaccisV2(): Number[] {
+    return [0, 1, 1, 2, 3, 5]
+  }
 
-/*
+  /*
 v3: Function to return calculated fibonacci sequence
 */
-function getFibonaccisV3(): Number[] {
-  const fibonacciSequence: Number[] = [];
-  const maximum = 2;
+  function getFibonaccisV3(): Number[] {
+    const fibonacciSequence: Number[] = [];
 
-  for (let i = 0; i < maximum; i++) {
-    fibonacciSequence.push(i);
-  }
-
-  return fibonacciSequence;
-}
-
-/*
-v4: Function to return calculated fibonacci sequence
-Improved with 
-1. Calculate first 2 numbers in the sequence
-2. Handle when n > 1
-*/
-function getFibonaccisV4(): number[] {
-  const fibonacciSequence: number[] = [];
-  const maximum = 12;
-
-  for (let i = 0; i < maximum; i++) {
-    if (i == 0) {
-      fibonacciSequence.push(0);
-    }
-    else if (i == 1) {
-      fibonacciSequence.push(1);
-    } else {
-      let sum = fibonacciSequence[i - 1] + fibonacciSequence[i - 2]
-      fibonacciSequence.push(sum);
-    }
-  }
-
-  return fibonacciSequence;
-}
-
-/*
-v5: Function to return calculated fibonacci sequence. 
-1. Optimize the first two conditions.
-2. Code in shorter number of lines of code
-*/
-function getFibonaccisV5(): number[] {
-  const fibonacciSequence: number[] = [];
-  const maximum = 12;
-
-  for (let i = 0; i < maximum; i++) {
-    if (i <= 1) {
+    for (let i = 0; i < count; i++) {
       fibonacciSequence.push(i);
     }
-    else {
-      let sum = fibonacciSequence[i - 1] + fibonacciSequence[i - 2]
-      fibonacciSequence.push(sum);
+
+    return fibonacciSequence;
+  }
+
+  /*
+    v4: Function to return calculated fibonacci sequence
+    Improved with: 
+    1. Handle the first 2 numbers in the sequence
+    2. Handle when n > 1
+  */
+  function getFibonaccisV4(): number[] {
+    const fibonacciSequence: number[] = [];
+
+    for (let i = 0; i < count; i++) {
+      if (i == 0) {
+        fibonacciSequence.push(0);
+      }
+      else if (i == 1) {
+        fibonacciSequence.push(1);
+      } else {
+        let sum = fibonacciSequence[i - 1] + fibonacciSequence[i - 2]
+        fibonacciSequence.push(sum);
+      }
     }
+
+    return fibonacciSequence;
   }
 
-  return fibonacciSequence;
-}
+  /*
+    v5: Function to return calculated fibonacci sequence. 
+    1. Optimize the first two conditions.
+    2. Code in shorter number of lines of code
+  */
+  function getFibonaccisV5(): number[] {
+    const fibonacciSequence: number[] = [];
 
-/*
-v6: Function to return calculated fibonacci sequence using recurssion. 
-*/
-function getAllFibonaccis(count: number): number[] {
-  const fibonacciSequence: number[] = [];
+    for (let i = 0; i < count; i++) {
+      if (i <= 1) {
+        fibonacciSequence.push(i);
+      }
+      else {
+        let sum = fibonacciSequence[i - 1] + fibonacciSequence[i - 2]
+        fibonacciSequence.push(sum);
+      }
+    }
 
-  for (let i = 0; i < count; i++) {
-    fibonacciSequence.push(getFibonaccisV6(i));
+    return fibonacciSequence;
   }
 
-  return fibonacciSequence;
-}
+  /*
+    v6: Wrapper function to return calculated fibonacci sequence using recurssion. 
+  */
+  function getAllFibonaccis(maximum: number): number[] {
+    const fibonacciSequence: number[] = [];
 
-/*
-v6: Function to return calculated fibonacci sequence using recurssion. 
- - way less code using recurssion
-*/
-function getFibonaccisV6(count: number): number {
-  if (count <= 1) {
-    return count;
+    for (let i = 0; i < maximum; i++) {
+      fibonacciSequence.push(getFibonaccisV6(i));
+    }
+
+    return fibonacciSequence;
   }
-  else {
-    return getFibonaccisV6(count - 1) + getFibonaccisV6(count - 2);
+
+  /*
+  v6: Function to return calculated fibonacci sequence using recurssion. 
+   - way less code using recurssion
+  */
+  function getFibonaccisV6(count: number): number {
+    if (count <= 1) {
+      return count;
+    }
+    else {
+      return getFibonaccisV6(count - 1) + getFibonaccisV6(count - 2);
+    }
   }
 }
 
