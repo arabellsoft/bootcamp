@@ -69,7 +69,7 @@ function Fibonacci() {
     <Grid>
       <Grid.Column>
         <Grid columns={13} id='nested_1'>
-          {getFibonaccisV5().map(function (i) {
+          {getAllFibonaccis().map(function (i) {
             return <Grid.Column>
               <p>
                 <span>
@@ -161,12 +161,12 @@ v3: Function to return calculated fibonacci sequence
   }
 
   /*
-    v6: Wrapper function to return calculated fibonacci sequence using recurssion. 
+    v6: Wrapper function to return calculated fibonacci sequence using recursion. 
   */
-  function getAllFibonaccis(maximum: number): number[] {
+  function getAllFibonaccis(): number[] {
     const fibonacciSequence: number[] = [];
 
-    for (let i = 0; i < maximum; i++) {
+    for (let i = 0; i < count; i++) {
       fibonacciSequence.push(getFibonaccisV6(i));
     }
 
@@ -174,8 +174,8 @@ v3: Function to return calculated fibonacci sequence
   }
 
   /*
-  v6: Function to return calculated fibonacci sequence using recurssion. 
-   - way less code using recurssion
+  v6: Function to return calculated fibonacci sequence using recursion. 
+   - way less code using recursion
   */
   function getFibonaccisV6(count: number): number {
     if (count <= 1) {
