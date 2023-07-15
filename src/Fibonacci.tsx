@@ -69,7 +69,7 @@ function Fibonacci() {
     <Grid>
       <Grid.Column>
         <Grid columns={13} id='nested_1'>
-          {getAllFibonaccis().map(function (i) {
+          {getFibonaccisV2().map(function (i) {
             return <Grid.Column>
               <p>
                 <span>
@@ -92,19 +92,19 @@ function Fibonacci() {
     v1: Initial function to return just an array of 1 element
   */
   function getFibonaccisV1(): Number[] {
-    return [1]
+    return [0];
   }
 
   /*
     v2: Basic function to return hard-coded fibonacci sequence
   */
   function getFibonaccisV2(): Number[] {
-    return [0, 1, 1, 2, 3, 5]
+    return [0, 1, 1, 2, 3, 5];
   }
 
   /*
-v3: Function to return calculated fibonacci sequence
-*/
+    v3: Function to return array using selector.
+  */
   function getFibonaccisV3(): Number[] {
     const fibonacciSequence: Number[] = [];
 
@@ -152,7 +152,8 @@ v3: Function to return calculated fibonacci sequence
         fibonacciSequence.push(i);
       }
       else {
-        let sum = fibonacciSequence[i - 1] + fibonacciSequence[i - 2]
+        let sum = fibonacciSequence[i - 1] + 
+          fibonacciSequence[i - 2]
         fibonacciSequence.push(sum);
       }
     }
@@ -182,7 +183,8 @@ v3: Function to return calculated fibonacci sequence
       return count;
     }
     else {
-      return getFibonaccisV6(count - 1) + getFibonaccisV6(count - 2);
+      return getFibonaccisV6(count - 1) + 
+        getFibonaccisV6(count - 2);
     }
   }
 }
